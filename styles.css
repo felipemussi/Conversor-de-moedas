@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000000;
+
+}
+
+.bg_video{
+    position: fixed; 
+    right: 0; 
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    width: auto; 
+    height: auto; 
+    z-index: -1000;
+    background: url(./conversorMonetario/assets/img/fundo.jpg) no-repeat;
+    background-size: cover; 
+    opacity: 0.4;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    border: 2px hsl(0, 0%, 0%) solid;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+}
+p{
+    font-size: 20px;
+    color: #ffffff;
+}
+h2 {
+    width: 50%;
+    font-size: 25px;
+    color: #ffffff;
+    border: #ffffff solid 1px;
+    align-items: center;
+    display: inline-block;
+    background-color: #000000;
+    font-weight: 600;
+}
+h1 {
+    margin: 10px;
+    font-size: 40px;
+    font-weight: 800;
+}
+body {
+    background-color: #000000;
+
+}
+main {
+    margin-top: 100px;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    background-color: #000000 ;
+    margin-bottom: 80px;
+}
+
+.projetos {
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s;
+    color: #000000;
+    
+}
+img {
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    display: block;
+    margin-bottom: 18px;
+    border-radius: 15px;
+}
+
+.box-projetos {
+    width: 30%;
+    margin: 0 20px;
+    height: auto;
+    border: 2px hsl(0, 0%, 100%) solid;
+    align-items: center;
+    background-color: #000000;
+    transition: transform 0.3s;
+    border-radius: 15px;
+    box-shadow: 8px 8px 8px rgba(255, 255, 255, 255.2);
+    }
+
+.box-projetos:hover {
+    transform: scale(1.1);
+}
+.linha{
+  width: 95%; /* Largura da linha */
+  height: 2px; /* Altura da linha (grossura) */
+  background-color: #ffffff; /* Cor da linha */
+  margin: 25px auto 25px; /* Centraliza a linha */
+ box-shadow: 8px 6px 8px rgba(255, 255, 255, 255.5); /* Sombras: horizontal, vertical, desfoque, cor */
+
+}
+
+footer {
+    width: 100%;
+    height: 60px;
+    border: 2px hsl(0, 0%, 0%) solid;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    position: fixed;
+    bottom: 0;
+    color: #000;
+}
+
+@media screen and (max-width: 768px) {
+    .box-projetos {
+        width: 80%;
+        margin: 10px 0;
+    
+    }
+    .projetos {
+        flex-direction: column;
+        
+    }
+
+    main{
+        background-color: transparent;
+    }
+    h1 {
+        font-size: 25px;
+    }
+
+    h2{
+        font-size: 20px;
+        width: 70%;
+        border: 0;
+    }
+
+    .footer {
+        font-size: 15px;
+    }
+    
+    
+}
